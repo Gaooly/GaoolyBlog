@@ -11,7 +11,10 @@ hero:
       link: https://vitepress.vuejs.org/
     - theme: alt
       text: Go About 
-      link: /about/me
+      link: /docs/about/me
+    - theme: alt
+      text: 敬请期待 
+      link: 
 features:
   - icon: 🚀
     title: 基本配置已完成，光速使用。
