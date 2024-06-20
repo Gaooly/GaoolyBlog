@@ -78,7 +78,25 @@ bin/rails g controller Api::V1::Users create
 ```
 # 查看路由
 bin/rails routes 
+
+
+# 秘钥管理
+
+EDITOR="code --wait" bin/rails credentials:edit
+
+EDITOR="code --wait" bin/rails credentials:edit --environment production
+
 ```
+## 邮件功能
+```
+# 创建相关文件
+bin/rails generate mailer User
+
+# 调用方法
+UserMailer.welcome_email(11).deliver
+```
+[更多文档, 英文](https://guides.rubyonrails.org/action_mailer_basics.html)
+[更多文档, 中文](https://ruby-china.github.io/rails-guides/v4.1/action_mailer_basics.html)
 
 # 访问接口
 ```
