@@ -56,6 +56,9 @@ bin/rails db:migrate
 # 回滚数据库上一次操作（数据有误时操作）
 bin/rails db:rollback step=1
 
+# 删除数据表
+ModelFileName.destroy_all
+
 # 重置数据库(危)
 bin/rails db:migrate:reset 
 
@@ -90,17 +93,16 @@ EDITOR="code --wait" rails credentials:edit --environment production
 # 查看路由
 bin/rails routes 
 
-
 ```
 
 
 # 秘钥管理
-
+```
 EDITOR="code --wait" bin/rails credentials:edit
 
 EDITOR="code --wait" bin/rails credentials:edit --environment production
-
 ```
+
 ## 邮件功能
 ```
 # 创建相关文件
@@ -110,7 +112,20 @@ bin/rails generate mailer User
 UserMailer.welcome_email(11).deliver
 ```
 [更多文档, 英文](https://guides.rubyonrails.org/action_mailer_basics.html)
+
 [更多文档, 中文](https://ruby-china.github.io/rails-guides/v4.1/action_mailer_basics.html)
+
+## 第三方库
+
+### [API文档生成](https://github.com/zipmark/rspec_api_documentation)
+```
+gem 'rspec_api_documentation'
+```
+
+### [分页](https://github.com/kaminari/kaminari)
+```
+gem 'kaminari'
+```
 
 # 访问接口
 ```
@@ -120,3 +135,5 @@ curl -X POST http://127.0.0.1:3000/users
 # get
 curl http://127.0.0.1:3000/users/1
 ```
+
+

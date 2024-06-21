@@ -59,4 +59,10 @@ git reset --soft <HEAD>
 # 工作区和暂存区会被完全重置为和指定 HEAD 位置相同的内容。
 git reset --hard <HEAD>
 ```
+### 移除文件 
+```
+# 从历史中移除文件
+git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch ./src/fileName.vue' --prune-empty --tag-name-filter cat -- --all
+```
+
 [更多](https://www.bookstack.cn/read/git-tutorial/README.md)
