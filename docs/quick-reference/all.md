@@ -15,6 +15,13 @@ $ passwd <用户名>
 $  passwd linuxUser
 ```
 
+## shell脚本删除 \r
+
+```
+# 执行.sh文件时出现 \r提示
+$ sed -i 's/\r//' test.sh
+```
+
 ## Git
 ### 准备
 ```

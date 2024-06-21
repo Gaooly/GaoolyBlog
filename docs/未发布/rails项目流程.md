@@ -73,11 +73,25 @@ RAILS_ENV=test bin/rails db:migrate
 bin/rails g controller Api::V1::Users create
 ```
 
+## 密钥管理
+
+```
+# 开发环境密钥
+EDITOR="code --wait" rails credentials:edit
+
+# 生产环境密钥
+EDITOR="code --wait" rails credentials:edit --environment production
+
+```
+
 ## 其他
  
 ```
 # 查看路由
 bin/rails routes 
+
+
+```
 
 
 # 秘钥管理
