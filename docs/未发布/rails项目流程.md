@@ -120,11 +120,22 @@ UserMailer.welcome_email(11).deliver
 ### [API文档生成](https://github.com/zipmark/rspec_api_documentation)
 ```
 gem 'rspec_api_documentation'
+
+# 生成文档
+bin/rake docs:generate
 ```
 
 ### [分页](https://github.com/kaminari/kaminari)
 ```
 gem 'kaminari'
+```
+
+### 单元测试
+```
+gem rspec
+
+# 执行测试
+bundle exec rspec
 ```
 
 # 访问接口
