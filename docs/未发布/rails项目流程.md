@@ -74,6 +74,8 @@ RAILS_ENV=test bin/rails db:migrate
 ```
 # 创建 controller
 bin/rails g controller Api::V1::Users create
+
+bin/rails g controller api/v1/users_controller
 ```
 
 ## 密钥管理
