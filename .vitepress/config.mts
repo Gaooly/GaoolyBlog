@@ -15,6 +15,8 @@ export default defineConfig({
             { text: '主页', link: '/' },
             { text: '指令速查', link: '/docs/quick-reference/git' },
             { text: '关于我', link: '/docs/about/me' },
+            // { text: 'api', link: '/api-examples' },
+            // { text: 'markdown', link: '/markdown-examples' },
         ],
         sidebar: {
             '/docs/quick-reference/': { base: '/', items: [
@@ -23,6 +25,7 @@ export default defineConfig({
             ] },
             '/docs/about/': { base: '/', items: [{ text: '关于我', link: 'docs/about/me' }] },
         },
+        // type SocialLinkIcon =| 'discord'| 'facebook'| 'github'| 'instagram'| 'linkedin'| 'mastodon'| 'npm'| 'slack'| 'twitter'| 'x'| 'youtube'| { svg: string }
         socialLinks: [{ icon: 'github', link: 'https://github.com/Gaooly' }],
     },
 });
